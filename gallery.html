@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="osc.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet"><!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<title>Gallery</title>
+</head>
+<body>
+	<!--Header that contains the club logo and the toggle button-->
+	<header>
+		<a class="brand" href="index.html">Otago Ski Club</a>
+		<div id="myNav" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <div class="overlay-content">
+			<a class="dropbtn" href="index.html">Home</a> <a class="dropbtn" href="skiweeks.html">Ski Weeks</a> <a class="dropbtn" href="accomodation.html">Accomodation</a> <a class="dropbtn" href="gallery.html">Gallery</a> <a class="dropbtn" href="contact.html">Contact</a>
+		  </div>
+		</div>
+		<div class="toggle_button">
+		  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+		</div>
+	</header>
+	<!--Parallax image-->
+	<div class="parallax_gallery"></div><!---Gallery-->
+	<!-- Images used to open the lightbox -->
+	<div class="gallery_showcase">
+		<div class="row_f_gallery">
+			<div class="column_f_gallery"><img class="hover-shadow" alt="" height="250" onclick="openModal();currentSlide(1)" src="images/OSC%20lodge%20photos%20gallery/IMG_1838-rotated.webp"></div>
+			<div class="column_f_gallery"><img class="hover-shadow" alt="" height="250" onclick="openModal();currentSlide(2)" src="images/OSC%20lodge%20photos%20gallery/IMG_1840-rotated.webp"></div>
+			<div class="column_f_gallery"><img class="hover-shadow" alt="" height="250" onclick="openModal();currentSlide(3)" src="images/OSC%20lodge%20photos%20gallery/IMG_1841-rotated.webp"></div>
+			<div class="column_f_gallery"><img class="hover-shadow" alt="" height="250" onclick="openModal();currentSlide(4)" src="images/OSC%20lodge%20photos%20gallery/image-5.webp"></div>
+			<div class="column_f_gallery"><img class="hover-shadow" alt="" height="250" onclick="openModal();currentSlide(5)" src="images/OSC%20lodge%20photos%20gallery/IMG_1837-rotated.webp"></div>
+			<div class="column_f_gallery"><img class="hover-shadow" alt="" height="250" onclick="openModal();currentSlide(6)" src="images/OSC%20lodge%20photos%20gallery/IMG_1844-rotated.webp"></div>
+			<div class="column_f_gallery"><img class="hover-shadow" alt="" height="250" onclick="openModal();currentSlide(7)" src="images/OSC%20lodge%20photos%20gallery/IMG_1843-rotated.webp"></div>
+			<div class="column_f_gallery"><img class="hover-shadow" alt="" height="250" onclick="openModal();currentSlide(8)" src="images/OSC%20lodge%20photos%20gallery/image-6.webp"></div>
+			<div class="column_f_gallery"><img class="hover-shadow" alt="" height="250" onclick="openModal();currentSlide(9)" src="images/OSC%20lodge%20photos%20gallery/image-1.webp"></div>
+			<div class="column_f_gallery"><img class="hover-shadow" alt="" height="250" onclick="openModal();currentSlide(10)" src="images/OSC%20lodge%20photos%20gallery/IMG_1848-rotated.webp"></div>
+			<div class="column_f_gallery"><img class="hover-shadow" alt="" height="250" onclick="openModal();currentSlide(11)" src="images/OSC%20lodge%20photos%20gallery/image-3.webp"></div>
+			<div class="column_f_gallery"><img class="hover-shadow" alt="" height="250" onclick="openModal();currentSlide(12)" src="images/OSC%20lodge%20photos%20gallery/IMG_1845-rotated.webp"></div>
+		</div>
+	</div><!-- The Modal/Lightbox -->
+	<div class="modal" id="myModal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+			<div class="mySlides">
+			<div class="numbertext">
+				1 / 12
+			</div><img height="600" alt="" src="images/OSC%20lodge%20photos%20gallery/IMG_1838-rotated.webp" style="width: 100%;"></div>
+			<div class="mySlides">
+			<div class="numbertext">
+				2 / 12
+			</div><img height="600" alt="" src="images/OSC%20lodge%20photos%20gallery/IMG_1840-rotated.webp" style="width:100%"></div>
+			<div class="mySlides">
+			<div class="numbertext">
+				3 / 12
+			</div><img height="600" alt="" src="images/OSC%20lodge%20photos%20gallery/IMG_1841-rotated.webp" style="width:100%"></div>
+			<div class="mySlides">
+			<div class="numbertext">
+				4 / 12
+			</div><img height="600" alt="" src="images/OSC%20lodge%20photos%20gallery/image-5.webp" style="width:100%"></div>
+			<div class="mySlides">
+			<div class="numbertext">
+				5 / 12
+			</div><img height="600" alt="" src="images/OSC%20lodge%20photos%20gallery/IMG_1837-rotated.webp" style="width:100%"></div>
+			<div class="mySlides">
+			<div class="numbertext">
+				6 / 12
+			</div><img height="600" alt="" src="images/OSC%20lodge%20photos%20gallery/IMG_1844-rotated.webp" style="width:100%"></div>
+			<div class="mySlides">
+			<div class="numbertext">
+				7 / 12
+			</div><img height="600" alt="" src="images/OSC%20lodge%20photos%20gallery/IMG_1843-rotated.webp" style="width:100%"></div>
+			<div class="mySlides">
+			<div class="numbertext">
+				8 / 12
+			</div><img height="600" alt="" src="images/OSC%20lodge%20photos%20gallery/image-6.webp" style="width:100%"></div>
+			<div class="mySlides">
+			<div class="numbertext">
+				9 / 12
+			</div><img height="600" alt="" src="images/OSC%20lodge%20photos%20gallery/image-1.webp" style="width:100%"></div>
+			<div class="mySlides">
+			<div class="numbertext">
+				10 / 12
+			</div><img height="600" alt="" src="images/OSC%20lodge%20photos%20gallery/IMG_1848-rotated.webp" style="width:100%"></div>
+			<div class="mySlides">
+			<div class="numbertext">
+				11 / 12
+			</div><img height="600" alt="" src="images/OSC%20lodge%20photos%20gallery/image-3.webp" style="width:100%"></div>
+			<div class="mySlides">
+			<div class="numbertext">
+				12 / 12
+			</div><img height="600" alt="" src="images/OSC%20lodge%20photos%20gallery/IMG_1845-rotated.webp" style="width:100%"></div><!-- Next/previous controls -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a> <!-- Caption text -->
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div><!-- Thumbnail image controls -->
+			<div class="column_f_gallery"><img alt="" class="demo" height="200" onclick="currentSlide(1)" src="images/OSC%20lodge%20photos%20gallery/IMG_1838-rotated.webp"></div>
+			<div class="column_f_gallery"><img alt="" class="demo" height="200" onclick="currentSlide(2)" src="images/OSC%20lodge%20photos%20gallery/IMG_1840-rotated.webp"></div>
+			<div class="column_f_gallery"><img alt="" class="demo" height="200" onclick="currentSlide(3)" src="images/OSC%20lodge%20photos%20gallery/IMG_1841-rotated.webp"></div>
+			<div class="column_f_gallery"><img alt="" class="demo" height="200" onclick="currentSlide(4)" src="images/OSC%20lodge%20photos%20gallery/image-5.webp"></div>
+			<div class="column_f_gallery"><img alt="" class="demo" height="200" onclick="currentSlide(5)" src="images/OSC%20lodge%20photos%20gallery/IMG_1837-rotated.webp"></div>
+			<div class="column_f_gallery"><img alt="" class="demo" height="200" onclick="currentSlide(6)" src="images/OSC%20lodge%20photos%20gallery/IMG_1844-rotated.webp"></div>
+			<div class="column_f_gallery"><img alt="" class="demo" height="200" onclick="currentSlide(7)" src="images/OSC%20lodge%20photos%20gallery/IMG_1843-rotated.webp"></div>
+			<div class="column_f_gallery"><img alt="" class="demo" height="200" onclick="currentSlide(8)" src="images/OSC%20lodge%20photos%20gallery/image-6.webp"></div>
+			<div class="column_f_gallery"><img alt="" class="demo" height="200" onclick="currentSlide(9)" src="images/OSC%20lodge%20photos%20gallery/image-1.webp"></div>
+			<div class="column_f_gallery"><img alt="" class="demo" height="200" onclick="currentSlide(10)" src="images/OSC%20lodge%20photos%20gallery/IMG_1848-rotated.webp"></div>
+			<div class="column_f_gallery"><img alt="" class="demo" height="200" onclick="currentSlide(11)" src="images/OSC%20lodge%20photos%20gallery/image-3.webp"></div>
+			<div class="column_f_gallery"><img alt="" class="demo" height="200" onclick="currentSlide(12)" src="images/OSC%20lodge%20photos%20gallery/IMG_1845-rotated.webp"></div>
+		</div>
+	</div><!---create a footer for this website=-->
+	<footer class="footer">
+		<div class="container_f_footer">
+			<div class="row_f_footer">
+				<div class="footer-col">
+					<h4>Home</h4>
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Join Today</h4>
+					<ul>
+						<li>
+							<a href="skiweeks.html">Ski Weeks</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Our Lodge</h4>
+					<ul>
+						<li>
+							<a href="accomodation.html">Accomodation</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Gallery</h4>
+					<ul>
+						<li>
+							<a href="gallery.html">Gallery</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>contact</h4>
+					<ul>
+						<li>
+							<a href="contact.html">Contact us</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Follow us</h4>
+					<div class="social-links">
+						<a href="#"><i class="fab fa-facebook f"></i></a> <a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-twitter"></i></a>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>Copyrights © 28/09/2022 Otago Ski Club / Designer: Bruce Zhang</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="osc.js">
+	</script>
+	<script src="overlay.js"></script>
+</body>
+</html>
